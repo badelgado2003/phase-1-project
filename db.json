@@ -1,0 +1,53 @@
+{
+    "demographic":{
+        "maritalStatus": {
+            "single": [],
+            "married": [],
+            "divorced": []
+        },
+        "gender": {
+            "male": [],
+            "female": [],
+            "other": []
+        },
+        "religion": {
+            "Christianity": [],
+            "Hinduism": [],
+            "Buddhism": []
+        }
+    },
+    "sports": {
+        "footballID": [],
+        "basketballID": [],
+        "baseballID": []
+    },
+    "age": {
+        "child": [],
+        "young": {
+        "preteen": [],
+        "teen": []
+        },
+        "adult": [],
+        "senior": []
+    },
+    "restictions":{
+        "restrictBadPostForKids": [],
+        "restrictedSafeForWorkPosts":[],
+        "notSafeForWork": []
+    },
+    "topVoted": {
+        "mostGoated": [],
+        "mostOnFire": [],
+        "mostLaughs": []
+    },
+    "post": {
+        "id": 1,
+        "title":"title",
+        "message": "message",
+        "laughs": 1,
+        "fire": 1,
+        "goat": 1,
+        "tag": "tag"
+    }
+    
+}
