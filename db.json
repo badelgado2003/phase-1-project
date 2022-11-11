@@ -30,6 +30,15 @@
       "fire": 5,
       "laughs": 0,
       "id": 3
+    },
+    {
+      "title": "Coca-Cola",
+      "message": "I can't believe this company is still fucking running!",
+      "tag": "DownWithCoke",
+      "goat": 1,
+      "fire": 1,
+      "laughs": 5,
+      "id": 4
     }
   ]
 }
