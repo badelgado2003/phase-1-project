@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const postContainer = document.querySelector(".container")
     const form = document.querySelector('.add-post-form')
     form.addEventListener('submit', submitPost)
+    document.addEventListener("click", (event) => {
+      if(event.target.matches('goated-btn')) {
+        addLikes(event)
+      }
+    })
     addBtn.addEventListener("click", () => {
         addPost = !addPost;
         if (addPost) {
@@ -33,7 +38,7 @@ function renderPosts(post){
   laughs.classList.add('laughs-btn');
   goat.textContent = `${post.goat} 🐐`;
   fire.textContent = `${post.fire} 🔥`;
-  laughs.textContent = `${post.laughs}😂`;
+  laughs.textContent = `${post.laughs} 😂`;
   goat.id = post.id
   fire.id = post.id
   laughs.id = post.id
@@ -74,4 +79,24 @@ function submitPost(event) {
   title.value = ""
   message.value = ""
   tag.value = ""
+}
+
+function addLikes(event) {
+  event.preventDefault()
+  let more = parseInt(event.target.previousElementSibling.innerTest) + 1
+
+  fetch(`http://localhost:3000/posts/${event.target.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "goat": more    
+    })
+  })
+  .then(resp => resp.json())
+  .then((data => {
+    event.target.previousElementSibling.innerText = `${more}🐐`
+  }))
 }
