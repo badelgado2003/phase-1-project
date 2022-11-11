@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     retrievePosts()
 })
 const baseURL = 'http://localhost:3000/posts'
-const postCollection = document.getElementById('post-collection')
 function renderPosts(post){
   const div = document.createElement("div");
   div.classList.add('card');
@@ -42,7 +41,7 @@ function renderPosts(post){
   tag.classList.add('post-tag');
   tag.textContent = post.tag
   div.append(title, message, tag, goat, fire, laughs);
-  postCollection.appendChild(div);
+  document.getElementById('post-collection').appendChild(div);
 }
 
 function retrievePosts() {
