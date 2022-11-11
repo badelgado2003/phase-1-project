@@ -1,53 +1,30 @@
 {
-    "demographic":{
-        "maritalStatus": {
-            "single": [],
-            "married": [],
-            "divorced": []
+    "restrictedPostsForKids": [
+
+    ],
+    "MostGoated": [
+
+    ],
+    "MostOnFire": [
+        
+    ],
+    "MostLaughs": [
+
+    ],
+
+    "posts": [
+        {
+            "id": 1,
+            "title":"Clemson going downhill",
+            "message": "Man, Clemson played horribly during game against Notre Dame! I could play better and give better calls with my mouth ducktapped and my hands tied behind my back!",
+            "laughs": 3,
+            "fire": 1,
+            "goat": 5,
+            "tag": "ClemsonDisappointment"
         },
-        "gender": {
-            "male": [],
-            "female": [],
-            "other": []
-        },
-        "religion": {
-            "Christianity": [],
-            "Hinduism": [],
-            "Buddhism": []
+        {
+
         }
-    },
-    "sports": {
-        "footballID": [],
-        "basketballID": [],
-        "baseballID": []
-    },
-    "age": {
-        "child": [],
-        "young": {
-        "preteen": [],
-        "teen": []
-        },
-        "adult": [],
-        "senior": []
-    },
-    "restictions":{
-        "restrictBadPostForKids": [],
-        "restrictedSafeForWorkPosts":[],
-        "notSafeForWork": []
-    },
-    "topVoted": {
-        "mostGoated": [],
-        "mostOnFire": [],
-        "mostLaughs": []
-    },
-    "post": {
-        "id": 1,
-        "title":"title",
-        "message": "message",
-        "laughs": 1,
-        "fire": 1,
-        "goat": 1,
-        "tag": "tag"
-    }
+    ]
     
 }
