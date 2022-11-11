@@ -31,3 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 })
+const baseURL = 'http://localhost:3000/posts'
+const postCollection = document.getElementById('post-collection')
+function renderPosts(post){
+  const div = document.createElement("div");
+  div.classList.add('card');
+  const title = document.createElement('h2');
+  title.textContent = post.title;
+  const message = document.createElement('p');
+  message.textContent = post.message;
+  const goat = document.createElement('button');
+  const fire = document.createElement('button');
+  const laughs = document.createElement('button');
+  goat.classList.add('goated-btn');
+  fire.classList.add('fire-btn');
+  laughs.classList.add('laughs-btn');
+  goat.textContent = `${post.goat} 🐐`;
+  fire.textContent = `${post.fire} 🔥`;
+  laughs.textContent = `${post.laughs}😂`;
+  goat.id = post.id
+  fire.id = post.id
+  laughs.id = post.id
+  div.append(title, message, goat, fire, laughs);
+  postCollection.appendChild(div);
+}
