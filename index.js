@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const addBtn = document.querySelector("#create-post")
     const postContainer = document.querySelector(".container")
     const form = document.querySelector('.add-post-form')
+    form.addEventListener('submit', submitPost)
     addBtn.addEventListener("click", () => {
         addPost = !addPost;
         if (addPost) {
@@ -52,6 +53,43 @@ function renderPosts(post){
   goat.id = post.id
   fire.id = post.id
   laughs.id = post.id
-  div.append(title, message, goat, fire, laughs);
+  const tag = document.createElement('span')
+  tag.classList.add('post-tag');
+  tag.textContent = post.tag
+  div.append(title, message, tag, goat, fire, laughs);
   postCollection.appendChild(div);
+}
+
+function retrievePosts() {
+  fetch(baseURL)
+  .then(response => response.json())
+  .then(data => data.forEach(post => renderPosts(post)))
+}
+
+function submitPost(event) {
+  event.preventDefault()
+  const [name, message, tag] = event.target
+
+  fetch(baseURL, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      name: name.value,
+      message: message.value,
+      tag: tag.value,
+      goat: 0,
+      fire: 0,
+      laughs: 0
+    })
+  })
+  .then(resp => resp.json())
+  .then(resp => renderPosts(resp))
+  .catch((error) => {
+    console.error('There has been a problem with your fetch operation', error);
+  });
+  name.value = ""
+  message.value = ""
+  tag.value = ""
 }
