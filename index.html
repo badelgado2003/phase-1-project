@@ -13,9 +13,9 @@
     <button class="btn"><i id="laughs"></i> Most Laughs😂</button>
     <button class="btn"><i id="dlmode"></i> Dark🌙</button>
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Search🔍</button>
+      <button onclick="searchBarToggle()" class="dropbtn">Search🔍</button>
       <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <input type="text" placeholder="Search.." id="myInput">
       </div>
     </div>
     <button id="create-post">Create Post✉️</button>
@@ -24,6 +24,7 @@
         <input type="text" name="title" value placeholder="Enter post title..." class="input-text">
         <br>
         <textarea type="text" name="message" value placeholder="Enter your message..." class="input-text" rows="4" cols="50"></textarea>
+        <br>
         <input type="text" name="tag" value placeholder="Enter post tag..." class="input-tag">
         <br>
         <input type="submit" name="submit" value="Post" class="submit">
