@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('.add-post-form')
     form.addEventListener('submit', submitPost)
     document.addEventListener("click", (event) => {
-      if(event.target.matches('goated-btn')) {
-        addLikes(event)
+      if(event.target.matches('.goated-btn')) {
+        addGoats(event)
       }
     })
     addBtn.addEventListener("click", () => {
@@ -81,9 +81,9 @@ function submitPost(event) {
   tag.value = ""
 }
 
-function addLikes(event) {
+function addGoats(event) {
   event.preventDefault()
-  let more = parseInt(event.target.previousElementSibling.innerTest) + 1
+  let more = parseInt(event.target.previousElementSibling.innerText) + 1
 
   fetch(`http://localhost:3000/posts/${event.target.id}`, {
     method: "PATCH",
