@@ -52,7 +52,7 @@ function retrievePosts() {
 
 function submitPost(event) {
   event.preventDefault()
-  const [name, message, tag] = event.target
+  const [title, message, tag] = event.target
 
   fetch(baseURL, {
     method: "POST",
@@ -60,7 +60,7 @@ function submitPost(event) {
       "content-type": "application/json"
     },
     body: JSON.stringify({
-      name: name.value,
+      title: title.value,
       message: message.value,
       tag: tag.value,
       goat: 0,
@@ -70,7 +70,8 @@ function submitPost(event) {
   })
   .then(resp => resp.json())
   .then(resp => renderPosts(resp))
-  name.value = ""
+  .catch(error => ("There is an error with the code.", error))
+  title.value = ""
   message.value = ""
   tag.value = ""
 }
