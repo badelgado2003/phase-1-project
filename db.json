@@ -14,13 +14,22 @@
       "tag": "ClemsonDisappointment"
     },
     {
-      "name": "Names given at birth",
+      "title": "Names given at birth",
       "message": "I don't understand the name i was given at birth",
       "tag": "Names",
       "goat": 0,
       "fire": 0,
       "laughs": 0,
       "id": 2
+    },
+    {
+      "title": "Clemson Tigers",
+      "message": "Go Tigers",
+      "tag": "Football",
+      "goat": 0,
+      "fire": 0,
+      "laughs": 0,
+      "id": 3
     }
   ]
 }
