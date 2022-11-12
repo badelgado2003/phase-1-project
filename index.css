@@ -1,4 +1,4 @@
-h1 {
+.title {
     font-family: 'Brush Script MT', 'cursive';
     font-size: 75px;
     margin: 5px 30px;
@@ -10,7 +10,7 @@ h1 {
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer;
-
+    margin-left: 5px;
   }
 .btn:hover {
     background-color: RoyalBlue;
@@ -22,6 +22,7 @@ h1 {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-left: 5px;
   }
   
 .dropbtn:hover, .dropbtn:focus {
@@ -73,7 +74,59 @@ h1 {
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer; 
+    margin-left: 5px;
   }
 #create-post:hover {
     background-color: royalblue;
   }
+.card {
+  border-radius: 25px;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 45rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  box-shadow: 3px 4px dodgerblue;
+  background-color: white;
+}
+hr {
+  background: black;
+  margin-bottom: auto;
+}
+#post-collection {
+  background-color: #dae0e6;
+}
+body {
+  margin: auto;
+}
+.goated-btn {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  height: 4rem;
+  padding: 12px 16px;
+  color: white;
+  font-size: 15px;
+}
+.fire-btn {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  height: 4rem;
+  padding: 12px 16px;
+  color: white;
+  font-size: 15px;
+  margin-top: 3px;
+}
+.laughs-btn {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  height: 4rem;
+  padding: 12px 16px;
+  color: white;
+  font-size: 15px;
+  margin-top: 3px;
+}
+.left-side-btns {
+  width: 55px;
+}
