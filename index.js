@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 const baseURL = 'http://localhost:3000/posts'
 function renderPosts(post){
-  const div = document.createElement("div");
-  div.classList.add('card');
-  const title = document.createElement('h2');
-  title.textContent = post.title;
-  const message = document.createElement('p');
-  message.textContent = post.message;
+  const table = document.createElement("table");
+  table.classList.add("card");
+  const trFirst = document.createElement("tr");
+  const tdFirst = document.createElement("td");
+  tdFirst.classList.add("left-side-btns");
+  tdFirst.rowSpan=3
   const goat = document.createElement('button');
   const fire = document.createElement('button');
   const laughs = document.createElement('button');
@@ -46,11 +46,25 @@ function renderPosts(post){
   goat.id = post.id
   fire.id = post.id
   laughs.id = post.id
-  const tag = document.createElement('span')
-  tag.classList.add('post-tag');
-  tag.textContent = post.tag
-  div.append(title, message, tag, goat, fire, laughs);
-  document.getElementById('post-collection').appendChild(div);
+  tdFirst.append(goat, fire, laughs);
+  const tdSecond = document.createElement("td");
+  tdSecond.classList.add("title");
+  tdSecond.textContent = post.title
+  trFirst.append(tdFirst, tdSecond);
+  const trSecond = document.createElement("tr");
+  const tdThird = document.createElement("td");
+  tdThird.classList.add("message");
+  const div = document.createElement("div");
+  div.textContent = post.message
+  tdThird.append(div);
+  trSecond.append(tdThird);
+  const trThird = document.createElement("tr");
+  const tdFourth = document.createElement("td");
+  tdFourth.classList.add("post-tags")
+  tdFourth.textContent = post.tag
+  trThird.append(tdFourth)
+  table.append(trFirst, trSecond, trThird);
+  document.getElementById('post-collection').appendChild(table)
 }
 
 function retrievePosts() {
