@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         addGoats(event)
       } else if (event.target.matches('.fire-btn')) {
         addOnFire(event)
+      } else if (event.target.matches('.laughs-btn')) {
+        addLaughs(event)
       }
     })
     addBtn.addEventListener("click", () => {
@@ -120,5 +122,25 @@ function addOnFire(event) {
   .then(resp => resp.json())
   .then((data => {
     event.target.innerText = `${more}🔥`
+  }))
+}
+
+function addLaughs(event) {
+  event.preventDefault()
+  let more = parseInt(event.target.innerText) + 1
+
+  fetch(`http://localhost:3000/posts/${event.target.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "laughs": more    
+    })
+  })
+  .then(resp => resp.json())
+  .then((data => {
+    event.target.innerText = `${more}😂`
   }))
 }
