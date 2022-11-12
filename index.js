@@ -1,30 +1,48 @@
 function searchBarToggle() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-let addPost = false;
+
 document.addEventListener("DOMContentLoaded", () => {
-    const addBtn = document.querySelector("#create-post")
-    const postContainer = document.querySelector(".container")
-    const form = document.querySelector('.add-post-form')
-    form.addEventListener('submit', submitPost)
-    document.addEventListener("click", (event) => {
-      if(event.target.matches('.goated-btn')) {
-        addGoats(event)
-      } else if (event.target.matches('.fire-btn')) {
-        addOnFire(event)
-      } else if (event.target.matches('.laughs-btn')) {
-        addLaughs(event)
-      }
-    })
-    addBtn.addEventListener("click", () => {
-        addPost = !addPost;
-        if (addPost) {
-            postContainer.style.display = "block";
-        } else {
-            postContainer.style.display = "none";
-        }
-    })
+  const addBtn = document.querySelector("#create-post")
+  const postContainer = document.querySelector(".container")
+  const form = document.querySelector('.add-post-form')
+  form.addEventListener('submit', submitPost)
+  document.addEventListener("click", (event) => {
+    if(event.target.matches('.goated-btn')) {
+      addGoats(event)
+    } else if (event.target.matches('.fire-btn')) {
+      addOnFire(event)
+    } else if (event.target.matches('.laughs-btn')) {
+      addLaughs(event)
+    }
+  })
+  let addPost;
+  addPost = false;
+  addBtn.addEventListener("click", () => {
+    addPost = !addPost;
+    if (addPost) {
+      postContainer.style.display = "block";
+    } else {
+      postContainer.style.display = "none";
+    }
+  })
     retrievePosts()
+    let dl = document.querySelector("#dlmode")
+    dl.addEventListener('click', () => {
+    console.log("Start")
+      if (dl.innerText=="Dark Mode🌙") {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.body.classList.toggle("dark-mode")
+        dl.textContent="Light Mode☀️"
+        console.log("D")
+      } else if (dl.textContent=="Light Mode☀️"){
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.body.classList.toggle("dark-mode")
+      dl.textContent="Dark Mode🌙"
+      console.log('L')
+      }
+      console.log("End")
+    })
 })
 const baseURL = 'http://localhost:3000/posts'
 function renderPosts(post){
@@ -159,6 +177,3 @@ function addLaughs(event) {
   }))
 }
 
-function darkLightMode() {
-  document.body.classList.toggle("dark-mode")
-}
