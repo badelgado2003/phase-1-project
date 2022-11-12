@@ -83,7 +83,7 @@ function submitPost(event) {
 
 function addGoats(event) {
   event.preventDefault()
-  let more = parseInt(event.target.previousElementSibling.innerText) + 1
+  let more = parseInt(event.target.innerText) + 1
 
   fetch(`http://localhost:3000/posts/${event.target.id}`, {
     method: "PATCH",
@@ -97,6 +97,6 @@ function addGoats(event) {
   })
   .then(resp => resp.json())
   .then((data => {
-    event.target.previousElementSibling.innerText = `${more}🐐`
+    event.target.innerText = `${more}🐐`
   }))
 }
