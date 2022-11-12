@@ -6,6 +6,7 @@
 .btn {
     background-color: DodgerBlue;
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 12px 16px;
     font-size: 16px;
@@ -23,6 +24,7 @@
     border: none;
     cursor: pointer;
     margin-left: 5px;
+    border-radius: 5px;
   }
   
 .dropbtn:hover, .dropbtn:focus {
@@ -47,6 +49,7 @@
   }
   
 .dropdown-content {
+    border-radius: 5px;
     display: none;
     position: absolute;
     background-color: #f6f6f6;
@@ -75,6 +78,7 @@
     font-size: 16px;
     cursor: pointer; 
     margin-left: 5px;
+    border-radius: 5px;
   }
 #create-post:hover {
     background-color: royalblue;
@@ -84,7 +88,6 @@
   border: grey solid 1px;
   padding: 1rem;
   width: 45rem;
-  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
@@ -108,7 +111,9 @@ body {
   padding: 12px 16px;
   color: white;
   font-size: 15px;
+  cursor: pointer;
 }
+.goated-btn:hover{background-color: RoyalBlue;}
 .fire-btn {
   background-color: dodgerblue;
   border-radius: 5px;
@@ -117,7 +122,9 @@ body {
   color: white;
   font-size: 15px;
   margin-top: 3px;
+  cursor: pointer;
 }
+.fire-btn:hover{background-color: RoyalBlue;}
 .laughs-btn {
   background-color: dodgerblue;
   border-radius: 5px;
@@ -126,7 +133,30 @@ body {
   color: white;
   font-size: 15px;
   margin-top: 3px;
+  cursor: pointer;
 }
+.laughs-btn:hover{background-color: RoyalBlue;}
 .left-side-btns {
   width: 55px;
+}
+.titles {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+  height: 45px;
+}
+.message {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: large;
+  height: 70px;
+  padding-top: 10px;
+
+}
+.post-tags {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  height: 20px;
+  color: dodgerblue;
 }
