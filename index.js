@@ -158,3 +158,7 @@ function addLaughs(event) {
     event.target.innerText = `${more}😂`
   }))
 }
+
+function darkLightMode() {
+  document.body.classList.toggle("dark-mode")
+}
