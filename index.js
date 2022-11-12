@@ -48,7 +48,7 @@ function renderPosts(post){
   laughs.id = post.id
   tdFirst.append(goat, fire, laughs);
   const tdSecond = document.createElement("td");
-  tdSecond.classList.add("title");
+  tdSecond.classList.add("titles");
   tdSecond.textContent = post.title
   trFirst.append(tdFirst, tdSecond);
   const trSecond = document.createElement("tr");
