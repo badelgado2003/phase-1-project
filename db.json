@@ -10,14 +10,14 @@
       "message": "Man, Clemson played horribly during game against Notre Dame! I could play better and give better calls with my mouth ducktapped and my hands tied behind my back!",
       "laughs": 3,
       "fire": 1,
-      "goat": 5,
+      "goat": 11,
       "tag": "ClemsonDisappointment"
     },
     {
       "title": "Names given at birth",
       "message": "I don't understand the name i was given at birth",
       "tag": "Names",
-      "goat": 2,
+      "goat": 3,
       "fire": 3,
       "laughs": 1,
       "id": 2
@@ -26,7 +26,7 @@
       "title": "Clemson Tigers",
       "message": "Go Tigers",
       "tag": "Football",
-      "goat": 2,
+      "goat": 3,
       "fire": 5,
       "laughs": 0,
       "id": 3
@@ -35,7 +35,7 @@
       "title": "Coca-Cola",
       "message": "I can't believe this company is still fucking running!",
       "tag": "DownWithCoke",
-      "goat": 1,
+      "goat": 2,
       "fire": 1,
       "laughs": 5,
       "id": 4
