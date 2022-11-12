@@ -8,34 +8,34 @@
       "id": 1,
       "title": "Clemson going downhill",
       "message": "Man, Clemson played horribly during game against Notre Dame! I could play better and give better calls with my mouth ducktapped and my hands tied behind my back!",
-      "laughs": 3,
-      "fire": 1,
-      "goat": 11,
-      "tag": "ClemsonDisappointment"
+      "laughs": 4,
+      "fire": 22,
+      "goat": 13,
+      "tag": "#ClemsonDisappointment"
     },
     {
       "title": "Names given at birth",
       "message": "I don't understand the name i was given at birth",
-      "tag": "Names",
-      "goat": 3,
-      "fire": 3,
-      "laughs": 1,
+      "tag": "#Names",
+      "goat": 23,
+      "fire": 7,
+      "laughs": 4,
       "id": 2
     },
     {
       "title": "Clemson Tigers",
       "message": "Go Tigers",
-      "tag": "Football",
+      "tag": "#Football",
       "goat": 3,
-      "fire": 5,
-      "laughs": 0,
+      "fire": 14,
+      "laughs": 8,
       "id": 3
     },
     {
       "title": "Coca-Cola",
       "message": "I can't believe this company is still fucking running!",
-      "tag": "DownWithCoke",
-      "goat": 2,
+      "tag": "#DownWithCoke",
+      "goat": 13,
       "fire": 1,
       "laughs": 5,
       "id": 4
