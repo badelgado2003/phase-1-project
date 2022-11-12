@@ -1,24 +1,49 @@
+[data-theme="light"] {
+  --primary-color: DodgerBlue;
+  --secondary-color: royalblue;
+  --font-color: black;
+  --heading-color: black;
+  --btnfont-color: white;
+  --bg-color: #dae0e6;
+  --search-color:#ddd;
+  --cardbg-color:white;
+  --hr-color: black;
+  --tag-color: dodgerblue;
+}
+[data-theme="dark"] {
+  --primary-color: rgb(34, 33, 33);
+  --secondary-color: rgb(44, 43, 43);
+  --font-color: #FDF1E7;
+  --btnfont-color:#FDF1E7;
+  --bg-color: black;
+  --heading-color: #FDF1E7;
+  --search-color: rgb(24, 22, 22);
+  --cardbg-color: rgb(44, 43, 43);
+  --hr-color:grey;
+  --tag-color: dodgerblue;
+}
 .title {
     font-family: 'Brush Script MT', 'cursive';
     font-size: 75px;
     margin: 5px 30px;
-  }
+    color: var(--heading-color)
+}
 .btn {
-    background-color: DodgerBlue;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--btnfont-color);
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer;
     margin-left: 5px;
   }
 .btn:hover {
-    background-color: RoyalBlue;
+    background-color: var(--secondary-color);
   }
 .dropbtn {
-    background-color: dodgerblue;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--btnfont-color);
     padding: 12px 16px;
     font-size: 16px;
     border: none;
@@ -28,7 +53,7 @@
   }
   
 .dropbtn:hover, .dropbtn:focus {
-    background-color: royalblue;
+    background-color: var(--secondary-color);
   }
   
 #myInput {
@@ -38,10 +63,10 @@
     font-size: 16px;
     padding: 14px 20px 12px 45px;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--search-color);
   }
   
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus {outline: 3px solid var(--search-color);}
   
 .dropdown {
     position: relative;
@@ -55,7 +80,7 @@
     background-color: #f6f6f6;
     min-width: 230px;
     overflow: auto;
-    border: 1px solid #ddd;
+    border: 1px solid var(--search-color);
     z-index: 1;
   }
   
@@ -66,14 +91,14 @@
     display: block;
   }
   
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: var(--search-color);}
   
 .show {display: block;}
 
 #create-post{
-    background-color: DodgerBlue;
+    background-color: var(--primary-color);
     border: none;
-    color: white;
+    color: var(--btnfont-color);
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer; 
@@ -91,51 +116,51 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  box-shadow: 3px 4px dodgerblue;
-  background-color: white;
+  box-shadow: 3px 4px var(--primary-color);
+  background-color: var(--cardbg-color);
 }
 hr {
-  background: black;
+  background: var(--hr-color);
   margin-bottom: auto;
 }
 #post-collection {
-  background-color: #dae0e6;
+  background-color: var(--bg-color);
 }
 body {
   margin: auto;
 }
 .goated-btn {
-  background-color: dodgerblue;
+  background-color: var(--primary-color);
   border-radius: 5px;
   height: 4rem;
   padding: 12px 16px;
-  color: white;
+  color: var(--btnfont-color);
   font-size: 15px;
   cursor: pointer;
 }
-.goated-btn:hover{background-color: RoyalBlue;}
+.goated-btn:hover{background-color: var(--secondary-color);}
 .fire-btn {
-  background-color: dodgerblue;
+  background-color: var(--primary-color);
   border-radius: 5px;
   height: 4rem;
   padding: 12px 16px;
-  color: white;
+  color: var(--btnfont-color);
   font-size: 15px;
   margin-top: 3px;
   cursor: pointer;
 }
-.fire-btn:hover{background-color: RoyalBlue;}
+.fire-btn:hover{background-color: var(--secondary-color);}
 .laughs-btn {
-  background-color: dodgerblue;
+  background-color: var(--primary-color);
   border-radius: 5px;
   height: 4rem;
   padding: 12px 16px;
-  color: white;
+  color: var(--btnfont-color);
   font-size: 15px;
   margin-top: 3px;
   cursor: pointer;
 }
-.laughs-btn:hover{background-color: RoyalBlue;}
+.laughs-btn:hover{background-color: var(--secondary-color);}
 .left-side-btns {
   width: 55px;
 }
@@ -145,6 +170,7 @@ body {
   text-align: left;
   font-weight: bold;
   height: 45px;
+  color: var(--heading-color);
 }
 .message {
   font-family: Arial, Helvetica, sans-serif;
@@ -152,11 +178,15 @@ body {
   font-size: large;
   height: 70px;
   padding-top: 10px;
+  color: var(--font-color);
 
 }
 .post-tags {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   height: 20px;
-  color: dodgerblue;
+  color: var(--tag-color);
+}
+.dark-mode {
+  background-color: black;
 }
