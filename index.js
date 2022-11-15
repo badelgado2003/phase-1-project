@@ -1,5 +1,7 @@
 const baseURL = 'http://localhost:3000/posts'
 let postCollect = document.getElementById('post-collection')
+let posts = []
+let filteredPosts
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -51,10 +53,11 @@ function renderPosts(post){
 
   const table = document.createElement("table");
   table.classList.add("card");
+  table.id = post.id
   const trFirst = document.createElement("tr");
   const tdFirst = document.createElement("td");
   tdFirst.classList.add("left-side-btns");
-  tdFirst.rowSpan=3
+  tdFirst.rowSpan=4
   const goat = document.createElement('button');
   const fire = document.createElement('button');
   const laughs = document.createElement('button');
@@ -84,7 +87,12 @@ function renderPosts(post){
   tdFourth.classList.add("post-tags")
   tdFourth.textContent = post.tag
   trThird.append(tdFourth)
-  table.append(trFirst, trSecond, trThird);
+  const trFourth = document.createElement("tr")
+  const tdFifth = document.createElement("td")
+  tdFifth.classList.add("date")
+  tdFifth.textContent = tdFifth.date;
+  trFourth.append(tdFifth)
+  table.append(trFirst, trSecond, trThird, trFourth);
   postCollect.appendChild(table)
 }
 
@@ -109,7 +117,8 @@ function submitPost(event) {
       tag: tag.value,
       goat: 0,
       fire: 0,
-      laughs: 0
+      laughs: 0,
+
     })
   })
   .then(resp => resp.json())
@@ -182,4 +191,34 @@ function addLaughs(event) {
 
 function searchBarToggle() {
   document.getElementById("myDropdown").classList.toggle("show");
+}
+
+const badWords = ['fool', 'dumb', 'hate', 'suck', 'stupid']
+function badWordsFilter() {
+  
+}
+
+let searchBar = document.getElementById('myInput')
+let searchTag = document.getElementsByClassName("post-tags")
+searchBar.addEventListener('keyup', searchForPosts)
+
+function searchForPosts(word) {
+  fetch(baseURL)
+  .then(resp => resp.json())
+  .then((data) => {
+    const {value} = word.target
+    const searchedWord = value.toLowerCase()
+    let label = data.tag
+    let postLabel = label.textContent
+    let lcTag = postLabel.toLowerCase()
+    if(lcTag.includes(searchedWord)) {
+      return data.id.style.display = "none"
+    } else {
+      return data.id.style.display = "block"
+    }
+  })
+}
+
+function sortBy(event) {
+  event.sort(a, b)
 }
