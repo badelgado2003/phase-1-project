@@ -7,16 +7,7 @@
   </head>
   <body>
     <h1 class="title">Labyrinth</h1>
-    <button class="btn" id="goated">Goated🐐</button>
-    <button class="btn" id="fire"> On Fire🔥</button>
-    <button class="btn" id="laughs"> Most Laughs😂</button>
     <button class="btn" id="dlmode"> Dark Mode🌙</button>
-    <div class="dropdown">
-      <button onclick="searchBarToggle()" class="dropbtn">Search Tags🔍</button>
-      <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Search.." id="myInput">
-      </div>
-    </div>
     <button id="create-post">Create Post✉️</button>
     <div class="container" style="display:none">
       <form class="add-post-form">
@@ -28,6 +19,12 @@
         <br>
         <input type="submit" name="submit" value="Post" class="submit">
       </form>
+    </div>
+    <div class="dropdown">
+      <button onclick=searchBarToggle() class="dropbtn">Search Tags🔍</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput">
+      </div>
     </div>
     <hr>
     <div id="post-collection"></div>

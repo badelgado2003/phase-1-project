@@ -1,13 +1,13 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "Clemson going downhill",
       "message": "Man, Clemson played horribly during game against Notre Dame! I could play better and give better calls with my mouth ducktapped and my hands tied behind my back!",
+      "tag": "#ClemsonDisappointment",
+      "goat": 15,
       "laughs": 4,
       "fire": 22,
-      "goat": 15,
-      "tag": "#ClemsonDisappointment"
+      "id": 1
     },
     {
       "title": "Names given at birth",
@@ -29,12 +29,30 @@
     },
     {
       "title": "Coca-Cola",
-      "message": "I can't believe this company is still fucking running!",
+      "message": "I can't believe this stupid company is still running! Like, the drink sucks what are those fools thinking putting the drink on the market",
       "tag": "#DownWithCoke",
       "goat": 13,
       "fire": 1,
       "laughs": 5,
       "id": 4
+    },
+    {
+      "title": "Air-Fryers are AMAZING",
+      "message": "Air-fryers are the best thing since sliced bread. I use it for almost anything from reheating leftovers to cooking a meal for the family. I always hear people complaining about how hard they are to clean but if you just do it right after use it is relatively easy.",
+      "tag": "#AirFryers #NeverUsingAnOvenAgain",
+      "goat": 2,
+      "fire": 2,
+      "laughs": 2,
+      "id": 5
+    },
+    {
+      "title": "Dogs are interesting",
+      "message": "My dog does so many weird things that I always end up in a better move after watching him for a while. Though I do wonder if he thinks the same when watches me around the house.",
+      "tag": "LoveMyDog",
+      "goat": 0,
+      "fire": 0,
+      "laughs": 0,
+      "id": 6
     }
   ]
 }
