@@ -4,35 +4,39 @@
       "title": "Clemson going downhill",
       "message": "Man, Clemson played horribly during the game against Notre Dame! They are so stupid! I could play better and give better calls with my mouth ducktapped and my hands tied behind my back!",
       "tag": "#ClemsonDisappointment",
-      "goat": 15,
-      "laughs": 4,
-      "fire": 22,
+      "date": "2022-11-9",
+      "goat": 38,
+      "laughs": 46,
+      "fire": 38,
       "id": 1
     },
     {
       "title": "Names given at birth",
       "message": "I don't understand the name i was given at birth",
       "tag": "#Names",
-      "goat": 23,
-      "fire": 7,
-      "laughs": 4,
+      "date": "2022-11-10",
+      "goat": 21,
+      "fire": 18,
+      "laughs": 36,
       "id": 2
     },
     {
       "title": "Clemson Tigers",
       "message": "Go Tigers",
       "tag": "#Football",
+      "date": "2022-11-11",
       "goat": 3,
       "fire": 14,
-      "laughs": 8,
+      "laughs": 22,
       "id": 3
     },
     {
       "title": "Coca-Cola",
       "message": "I can't believe this stupid company is still running! Like, the drink sucks what are those fools thinking putting the drink on the market",
       "tag": "#DownWithCoke",
-      "goat": 13,
-      "fire": 1,
+      "date": "2022-11-12",
+      "goat": 22,
+      "fire": 23,
       "laughs": 5,
       "id": 4
     },
@@ -40,8 +44,9 @@
       "title": "Air-Fryers are AMAZING",
       "message": "Air-fryers are the best thing since sliced bread. I use it for almost anything from reheating leftovers to cooking a meal for the family. I always hear people complaining about how hard they are to clean but if you just do it right after use it is relatively easy.",
       "tag": "#AirFryers #NeverUsingAnOvenAgain",
-      "goat": 2,
-      "fire": 2,
+      "date": "2022-11-13",
+      "goat": 22,
+      "fire": 25,
       "laughs": 2,
       "id": 5
     },
@@ -49,19 +54,61 @@
       "title": "Dogs are interesting",
       "message": "My dog does so many weird things that I always end up in a better move after watching him for a while. Though I do wonder if he thinks the same when watches me around the house.",
       "tag": "#LoveMyDog",
-      "goat": 0,
-      "fire": 0,
-      "laughs": 0,
+      "date": "2022-11-14",
+      "goat": 21,
+      "fire": 12,
+      "laughs": 7,
       "id": 6
     },
     {
       "title": "AI Kubernetes transpile resolve Babel",
       "message": "Microservices programmer native distributed legacy hipchat modern bundle waterfall time-to-interactive bootcamp void dynamic programming diversity and inclusion quick sort ELF cache accessibility architecture SOAP websockets views spaghetti code model dog-piling program UX compile imagemagick stateless.",
       "tag": "#service worker",
+      "date": "2022-11-15",
+      "goat": 13,
+      "fire": 34,
+      "laughs": 12,
+      "id": 7
+    },
+    {
+      "title": "Gas Prices",
+      "message": "I don't know about yall but the price on gas is getting out of hand. Like seriously, who is able to pay $80 a week on gas!",
+      "tag": "#Gas",
+      "date": "2022-11-16",
       "goat": 0,
       "fire": 0,
       "laughs": 0,
-      "id": 7
+      "id": 8
+    },
+    {
+      "title": "Clothing Prices",
+      "message": "Ok, to start I understand that some pieces of clothes are just worth the price, but come on, who can spend $20 on every piece of clothing for kids that are 3,4, even 5 years old.",
+      "tag": "#LowerThePrices",
+      "date": "2022-11-16",
+      "goat": 0,
+      "fire": 0,
+      "laughs": 0,
+      "id": 9
+    },
+    {
+      "title": "Cleaning Your Homes",
+      "message": "Why is it so difficult to be able to stay on top of having a clean home.",
+      "tag": "#Clean",
+      "date": "2022-11-16",
+      "goat": 0,
+      "fire": 0,
+      "laughs": 0,
+      "id": 10
+    },
+    {
+      "title": "Cleaning Your Homes",
+      "message": "Why is it so difficult to be able to stay on top of having a clean home.",
+      "tag": "#Clean",
+      "date": "2022-11-16",
+      "goat": 0,
+      "fire": 0,
+      "laughs": 0,
+      "id": 11
     }
   ]
 }

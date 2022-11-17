@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(event.target.matches('.goated-btn')) {
       addGoats(event)
     } else if (event.target.matches('.fire-btn')) {
-      addOnFire(event)
+      addFire(event)
     } else if (event.target.matches('.laughs-btn')) {
       addLaughs(event)
     }
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   retrievePosts()
 
-
   dl.addEventListener('click', () => {
     if (dl.innerText=="Dark Mode🌙") {
       document.documentElement.setAttribute('data-theme', 'dark');
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
       dl.textContent="Dark Mode🌙"
     }
   })
-
 
   function renderPosts(post){
     const table = document.createElement("table");
@@ -129,64 +127,60 @@ document.addEventListener("DOMContentLoaded", () => {
     tag.value = ""
     date.value = ""
   }
-
-  function addGoats(event) {
-    event.preventDefault()
-    let more = parseInt(event.target.innerText) + 1
-
-    fetch(`http://localhost:3000/posts/${event.target.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "goat": more    
-      })
-    })
-    .then(resp => resp.json())
-    .then((data => {
-      event.target.innerText = `${more}🐐`
-    }))
-  }
-
-  function addOnFire(event) {
-    event.preventDefault()
-    let more = parseInt(event.target.innerText) + 1
-
-    fetch(`http://localhost:3000/posts/${event.target.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "fire": more    
-      })
-    })
-    .then(resp => resp.json())
-    .then((data => {
-      event.target.innerText = `${more}🔥`
-    }))
-  }
-
-  function addLaughs(event) {
-    event.preventDefault()
-    let more = parseInt(event.target.innerText) + 1
-
-    fetch(`http://localhost:3000/posts/${event.target.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "laughs": more    
-      })
-    })
-    .then(resp => resp.json())
-    .then((data => {
-      event.target.innerText = `${more}😂`
-    }))
-  }
 })
+function addGoats(event) {
+  event.preventDefault()
+  let gUpdate = parseInt(event.target.parentElement.children[0].innerHTML, 10) + 1
+  fetch(`http://localhost:3000/posts/${event.target.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "goat": gUpdate
+    })
+  })
+  .then(resp => resp.json())
+  .then((data => {
+      event.target.innerText = `${gUpdate}🐐`
+  }))
+}
+
+function addFire(event) {
+  event.preventDefault()
+  let fUpdate = parseInt(event.target.parentElement.children[1].innerHTML, 10) + 1
+  fetch(`http://localhost:3000/posts/${event.target.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "fire": fUpdate
+    })
+  })
+  .then(resp => resp.json())
+  .then((data => {
+      event.target.innerText = `${fUpdate}🔥`
+  }))
+}
+
+function addLaughs(event) {
+  event.preventDefault()
+  let lUpdate = parseInt(event.target.parentElement.children[2].innerHTML, 10) + 1
+  fetch(`http://localhost:3000/posts/${event.target.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "laughs": lUpdate
+    })
+  })
+  .then(resp => resp.json())
+  .then((data => {
+      event.target.innerText = `${lUpdate}😂`
+  }))
+}
