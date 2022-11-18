@@ -4,9 +4,6 @@ The Labryinth is a application made to allow people to post their feelings and t
 ## Visual
 
 ## Usage
-
-
-## Posts Buttons
 To begin, the 🐐 button shows the Greatest OF All Time, so the higher number the more GOATED the post is. The 🔥 button is for if you dislike a post and to describe that the post might be going up in flames. The 😂 button is for if you find the post funny to show that you enjoyed the post and got a good laugh out of it. 
 
 ## Sources Used
