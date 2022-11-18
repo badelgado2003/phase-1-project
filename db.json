@@ -7,7 +7,7 @@
       "date": "2022-11-9",
       "goat": 38,
       "laughs": 46,
-      "fire": 38,
+      "fire": 56,
       "id": 1
     },
     {
@@ -17,7 +17,7 @@
       "date": "2022-11-10",
       "goat": 21,
       "fire": 18,
-      "laughs": 36,
+      "laughs": 44,
       "id": 2
     },
     {
@@ -25,7 +25,7 @@
       "message": "Go Tigers",
       "tag": "#Football",
       "date": "2022-11-11",
-      "goat": 3,
+      "goat": 37,
       "fire": 14,
       "laughs": 22,
       "id": 3
@@ -35,9 +35,9 @@
       "message": "I can't believe this stupid company is still running! Like, the drink sucks what are those fools thinking putting the drink on the market",
       "tag": "#DownWithCoke",
       "date": "2022-11-12",
-      "goat": 22,
-      "fire": 23,
-      "laughs": 5,
+      "goat": 31,
+      "fire": 35,
+      "laughs": 22,
       "id": 4
     },
     {
@@ -57,7 +57,7 @@
       "date": "2022-11-14",
       "goat": 21,
       "fire": 12,
-      "laughs": 7,
+      "laughs": 27,
       "id": 6
     },
     {
@@ -101,13 +101,13 @@
       "id": 10
     },
     {
-      "title": "Cleaning Your Homes",
-      "message": "Why is it so difficult to be able to stay on top of having a clean home.",
-      "tag": "#Clean",
-      "date": "2022-11-16",
-      "goat": 0,
-      "fire": 0,
-      "laughs": 0,
+      "title": "I had a great day",
+      "message": "Today has been great. I slept for so long today and got plenty of rest",
+      "tag": "#KeepGreatDayGoing",
+      "date": "2022-11-18",
+      "goat": 24,
+      "fire": 8,
+      "laughs": 1,
       "id": 11
     }
   ]
