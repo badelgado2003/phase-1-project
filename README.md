@@ -2,7 +2,7 @@
 The Labryinth is a application made to allow people to post their feelings and thoughts on a subject and to discover what others feel about various topics. It allows people to scroll to the point of getting where it feels like you are lost in a maze.
 
 ## Visual
-Visual.Phase-1-Project.PNG
+![Visual](C:\Users\BADel\OneDrive\Pictures\Screenshots\Visual.Phase-1-Project.PNG)
 ## Usage
 
 
